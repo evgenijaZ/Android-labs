@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="subtraction_sign">\u2212</string>
+    <string name="multiplication_sign">\u00D7</string>
+    <string name="addition_sign">\u002B</string>
+    <string name="division_sign">\u00F7</string>
+    <string name="equals_sign">\u003D</string>
+    <string name="hint_number1">first operand</string>
+    <string name="hint_number2">second operand</string>
+    <string name="result_text">0</string>
+    <string name="input_warning">Please input </string>
+    <string name="clear_button_text">C</string>
+</resources>

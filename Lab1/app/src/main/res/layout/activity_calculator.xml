@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/hint_number1"
+        android:inputType="numberDecimal|numberSigned"
+        android:maxLength="15"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/hint_number2"
+        android:inputType="numberDecimal|numberSigned"
+        android:maxLength="15"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number1" />
+
+    <TextView
+        android:id="@+id/operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/addition_sign"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/number2"
+        app:layout_constraintEnd_toStartOf="@+id/number1"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number1"
+        app:layout_constraintVertical_bias="0.681" />
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="293dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number2" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text="@string/result_text"
+        android:textSize="54sp"
+        app:layout_constraintBottom_toTopOf="@+id/mult_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+
+    <Button
+        android:id="@+id/plus_button"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/grey"
+        android:onClick="setOperation"
+        android:text="@string/addition_sign"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/minus_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/minus_button"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/grey"
+        android:onClick="setOperation"
+        android:text="@string/subtraction_sign"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mult_button"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/grey"
+        android:onClick="setOperation"
+        android:text="@string/multiplication_sign"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/divide_button"
+        app:layout_constraintEnd_toStartOf="@+id/clear_button"
+        app:layout_constraintStart_toEndOf="@+id/plus_button" />
+
+    <Button
+        android:id="@+id/divide_button"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/grey"
+        android:onClick="setOperation"
+        android:text="@string/division_sign"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/result_button"
+        app:layout_constraintStart_toEndOf="@+id/minus_button" />
+
+    <Button
+        android:id="@+id/result_button"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorPrimary"
+        android:onClick="getResult"
+        android:text="@string/equals_sign"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorAccent"
+        android:onClick="clearAll"
+        android:text="@string/clear_button_text"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/result_button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
