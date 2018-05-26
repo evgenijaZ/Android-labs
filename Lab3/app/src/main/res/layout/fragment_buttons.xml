@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonsFragment">
+
+    <Button
+        android:id="@+id/plus_button"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/grey"
+        android:text="@string/addition_sign"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/minus_button"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="78dp"
+        android:background="@color/grey"
+        android:text="@string/subtraction_sign"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/mult_button"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="126dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/grey"
+        android:text="@string/multiplication_sign"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/divide_button"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="126dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="78dp"
+        android:background="@color/grey"
+        android:text="@string/division_sign"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/result_button"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/equals_sign"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="78dp"
+        android:background="@color/colorAccent"
+        android:text="@string/clear_button_text"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/open_history_button"
+        android:layout_width="336dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="148dp"
+        android:background="@color/grey"
+        android:text="@string/open_history"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+
+</FrameLayout>
