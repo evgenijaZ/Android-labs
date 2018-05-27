@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab4</string>
+    <string name="play_text">Play</string>
+    <string name="pause_text">Pause</string>
+    <string name="stop_text">Stop</string>
+    <string name="play_online_text">Online</string>
+    <string name="enter_url">Enter URL</string>
+    <string name="set_path_text">Set path</string>
+    <string name="clear_path_text">Clear</string>
+</resources>
